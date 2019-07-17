@@ -13,9 +13,9 @@ export class CollectionComponent implements OnInit {
 
   ngOnInit() {
     this.collection = [
-      { title: 'I like a man with a bread', total_photos: 12 },
-      { title: 'Cho cho cho', total_photos: 22 },
-      { title: 'add oil oil oil ', total_photos: 123 }
+      { id: 1, title: 'I like a man with a bread', total_photos: 12 },
+      { id: 2, title: 'Cho cho cho', total_photos: 22 },
+      { id: 3, title: 'add oil oil oil ', total_photos: 123 }
     ];
   }
 }
