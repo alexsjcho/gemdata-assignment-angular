@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { PhotoCollection } from '../../models/PhotoCollection';
 import { ApiService } from '../../../services/api.service';
 
 @Component({

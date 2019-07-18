@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +18,14 @@ export class ApiService {
       `${this.API_ROOT_URL}/collections/${this.COLLECTION_ID}/?client_id=${
         this.API_KEY
       }`
+    );
+  }
+
+  public getPhotos() {
+    return this.httpClient.get(
+      `${this.API_ROOT_URL}/collections/${
+        this.COLLECTION_ID
+      }/photos/?client_id=${this.API_KEY}`
     );
   }
 }
