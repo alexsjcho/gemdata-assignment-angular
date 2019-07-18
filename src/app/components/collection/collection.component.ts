@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../../../services/api.service';
-import { PhotoCollection } from 'src/app/models/PhotoCollection';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-collection',
@@ -10,12 +10,19 @@ import { PhotoCollection } from 'src/app/models/PhotoCollection';
 export class CollectionComponent implements OnInit {
   collection = {};
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private router: Router) {}
 
   ngOnInit() {
     this.apiService.getCollection().subscribe((collection) => {
       console.log('Collection:', collection);
       this.collection = collection;
     });
+    if (!this.getCurrentPhoto()) {
+      this.router.navigateByUrl('/collection');
+    }
+  }
+
+  getCurrentPhoto() {
+    return this.apiService.getCurrentPhoto();
   }
 }

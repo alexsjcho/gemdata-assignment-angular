@@ -4,8 +4,8 @@ import { CollectionComponent } from './components/collection/collection.componen
 import { PhotosComponent } from './components/photos/photos.component';
 
 const routes: Routes = [
-  { path: 'collection/:id', component: PhotosComponent },
-  { path: 'collection', component: CollectionComponent }
+  { path: 'collection/detail', component: CollectionComponent },
+  { path: 'collection', component: PhotosComponent }
 ];
 
 @NgModule({

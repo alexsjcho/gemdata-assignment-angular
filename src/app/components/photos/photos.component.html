@@ -1,4 +1,5 @@
 <ul *ngFor="let photo of photos">
-  <li>{{ photo.description }}</li>
-  <br />
+  <li (click)="onClick(photo)">
+    <img [src]="photo.urls.small" alt="photo-item" />
+  </li>
 </ul>

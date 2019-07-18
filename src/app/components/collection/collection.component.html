@@ -1,4 +1,9 @@
 <h1 classname="collection-title">{{ collection.title }}</h1>
-<p>{{ collection.total_photos }}</p>
+<div *ngIf="getCurrentPhoto() as photo">
+  <p>{{ photo.alt_description }}</p>
+  <p>{{ photo.user.name }}</p>
+  <p>{{ photo.user.bio }}</p>
+  <p>{{ photo.urls.raw }}</p>
+</div>
 
 <!-- <app-photos *ngFor="let photo of photos" [photo]="photo"> </app-photos> -->
