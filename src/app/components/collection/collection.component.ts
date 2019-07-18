@@ -10,8 +10,6 @@ import { PhotoCollection } from 'src/app/models/PhotoCollection';
 export class CollectionComponent implements OnInit {
   collection = {};
 
-  @Input() photo: Photo;
-
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {

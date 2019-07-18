@@ -1,10 +1,8 @@
 ---
-
 Create a basic photo collection browser, using a vanilla Angular 8 project (use the Angular CLI). You will need to create a Service for networking calls, and create Components for display bits. You need two routes (one for the collection and one for the detail view).
-
 ---
 
-REST Data for you
+## REST Data for you
 
 API key: 81ce9c934431fb7027da435cf1448f3f4f2eedf08c72a5db94d6f8ff86847dc9
 (if you hit the rate limit, please create a sample developer account and "app")
@@ -15,7 +13,7 @@ API key: 81ce9c934431fb7027da435cf1448f3f4f2eedf08c72a5db94d6f8ff86847dc9
 https://unsplash.com/documentation#get-a-collection
 https://unsplash.com/documentation#get-a-collections-photos
 
-- Use collection_id 2022043
+- Use collection_id 2022043 [done]
 - Create "components" for reusable bits, but only as needed
 
 ## Page
@@ -46,4 +44,7 @@ https://unsplash.com/documentation#get-a-collections-photos
 - Use Arial and only 2 sizes (0.85rem, 2rem). Default weight 500.
 - For the "title" use 700 weight.
 - Colors - if showing text over a photo, use 60% white (hover 100% if link), otherwise if over a light background, use 85% black (titles) or 60% black (body copy).
+
+##Onsite Demo
+
 - Be prepared to make small design updates while presenting, like changing a size or color across all components in the most efficient manner.
