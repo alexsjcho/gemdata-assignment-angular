@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  API_KEY = '81ce9c934431fb7027da435cf1448f3f4f2eedf08c72a5db94d6f8ff86847dc9';
+  API_KEY = environment.API_KEY;
 
   API_ROOT_URL = 'https://api.unsplash.com';
 

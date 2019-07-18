@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../../../services/api.service';
 
 @Component({
@@ -8,6 +8,8 @@ import { ApiService } from '../../../services/api.service';
 })
 export class PhotosComponent implements OnInit {
   photos;
+
+  @Input() photo: Photo;
 
   constructor(private apiService: ApiService) {}
 

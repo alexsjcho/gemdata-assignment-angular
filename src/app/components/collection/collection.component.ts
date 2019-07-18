@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../../../services/api.service';
+import { PhotoCollection } from 'src/app/models/PhotoCollection';
 
 @Component({
   selector: 'app-collection',
@@ -8,6 +9,8 @@ import { ApiService } from '../../../services/api.service';
 })
 export class CollectionComponent implements OnInit {
   collection = {};
+
+  @Input() photo: Photo;
 
   constructor(private apiService: ApiService) {}
 

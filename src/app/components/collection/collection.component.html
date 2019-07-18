@@ -1,4 +1,4 @@
-<h1>{{ collection.title }}</h1>
+<h1 classname="collection-title">{{ collection.title }}</h1>
 <p>{{ collection.total_photos }}</p>
-<img src="`${collection.urls.small}`" alt="photo" />
-<img src="`${collection.user.profile_image.small}`" alt="profile-avatar" />
+
+<app-photos *ngFor="let photo of photos" [photo]="photo"> </app-photos>
