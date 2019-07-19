@@ -1,9 +1,8 @@
-<h1 classname="collection-title">{{ collection.title }}</h1>
-<div *ngIf="getCurrentPhoto() as photo">
+<!-- <div *ngIf="getCurrentPhoto() as photo">
   <p>{{ photo.alt_description }}</p>
   <p>{{ photo.user.name }}</p>
   <p>{{ photo.user.bio }}</p>
-  <p>{{ photo.urls.raw }}</p>
-</div>
+  <a [href]="photo.urls.raw"><p>Link to Raw Photo</p> </a>
+</div> -->
 
 <!-- <app-photos *ngFor="let photo of photos" [photo]="photo"> </app-photos> -->

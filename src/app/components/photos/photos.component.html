@@ -1,5 +1,10 @@
 <ul *ngFor="let photo of photos">
   <li (click)="onClick(photo)">
+    <div>
+      <p>Author Name{{ photo.user.name }}</p>
+      <img [src]="photo.user.profile_image.small" alt="avatar-photo" />
+    </div>
+
     <img [src]="photo.urls.small" alt="photo-item" />
   </li>
 </ul>

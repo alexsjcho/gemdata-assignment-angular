@@ -1,4 +1,14 @@
 <div>
-  <h1>{{ title }}</h1>
-  <router-outlet></router-outlet>
+  <nav>
+    <a routerLink="/collection">Collection</a>
+  </nav>
+  <!-- <div>
+      <h1>{{ collection.title }}</h1>
+    </div>
+    <div>
+      <p>Collection Size: {{ collection.total_photos }}</p>
+      <p>Curator Name: {{ collection.user.name }}</p>
+      <p>Curator Bio: {{ collection.user.bio }}</p>
+    </div> -->
+  <router-outlet> </router-outlet>
 </div>

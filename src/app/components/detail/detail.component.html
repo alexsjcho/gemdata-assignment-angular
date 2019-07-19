@@ -1,0 +1,7 @@
+<div *ngIf="getCurrentPhoto() as photo">
+  <p>Photo Description: {{ photo.alt_description }}</p>
+  <p>Auther Info: {{ photo.user.name }}</p>
+  <p>Author Bio: {{ photo.user.bio }}</p>
+  <a [href]="photo.urls.raw"><p>Link to Raw Photo</p> </a>
+  <img [src]="photo.urls.full" alt="full-photo" />
+</div>

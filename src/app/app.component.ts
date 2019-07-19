@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../services/api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = 'gemdata-take-home';
+  collection: any = {};
+
+  constructor(private apiService: ApiService, private router: Router) {}
+
+  ngOnInit() {
+    this.apiService.getCollection().subscribe((collection: any) => {
+      console.log('Collection:', collection);
+      this.collection = collection;
+    });
+  }
 }

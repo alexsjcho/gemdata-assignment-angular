@@ -3,13 +3,12 @@ import { ApiService } from '../../../services/api.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-collection',
-  templateUrl: './collection.component.html',
-  styleUrls: ['./collection.component.css']
+  selector: 'app-detail',
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.css']
 })
-export class CollectionComponent implements OnInit {
+export class DetailComponent implements OnInit {
   collection = {};
-
   constructor(private apiService: ApiService, private router: Router) {}
 
   ngOnInit() {
